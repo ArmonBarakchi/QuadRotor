@@ -1,0 +1,1 @@
+/quadrotor/ros2_ws/build/quadrotor_msgs/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_cpp.hpp

@@ -1,0 +1,24 @@
+[0.367s] Invoking command in '/quadrotor/ros2_ws/build/quadrotor_bringup': AMENT_PREFIX_PATH=/quadrotor/ros2_ws/install/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_msgs:/opt/ros/jazzy PYTHONPATH=/quadrotor/ros2_ws/build/quadrotor_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_nodes/lib/python3.12/site-packages:/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /quadrotor/ros2_ws/build/quadrotor_bringup/build --no-deps symlink_data
+[0.506s] running develop
+[0.578s] running egg_info
+[0.583s] creating quadrotor_bringup.egg-info
+[0.589s] writing quadrotor_bringup.egg-info/PKG-INFO
+[0.590s] writing dependency_links to quadrotor_bringup.egg-info/dependency_links.txt
+[0.591s] writing requirements to quadrotor_bringup.egg-info/requires.txt
+[0.591s] writing top-level names to quadrotor_bringup.egg-info/top_level.txt
+[0.592s] writing manifest file 'quadrotor_bringup.egg-info/SOURCES.txt'
+[0.606s] reading manifest file 'quadrotor_bringup.egg-info/SOURCES.txt'
+[0.607s] writing manifest file 'quadrotor_bringup.egg-info/SOURCES.txt'
+[0.616s] running build_ext
+[0.617s] Creating /quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages/quadrotor-bringup.egg-link (link to .)
+[0.619s] 
+[0.620s] Installed /quadrotor/ros2_ws/build/quadrotor_bringup
+[0.620s] running symlink_data
+[0.621s] creating /quadrotor/ros2_ws/install/quadrotor_bringup/share/ament_index
+[0.621s] creating /quadrotor/ros2_ws/install/quadrotor_bringup/share/ament_index/resource_index
+[0.622s] creating /quadrotor/ros2_ws/install/quadrotor_bringup/share/ament_index/resource_index/packages
+[0.623s] symbolically linking /quadrotor/ros2_ws/build/quadrotor_bringup/resource/quadrotor_bringup -> /quadrotor/ros2_ws/install/quadrotor_bringup/share/ament_index/resource_index/packages
+[0.624s] symbolically linking /quadrotor/ros2_ws/build/quadrotor_bringup/package.xml -> /quadrotor/ros2_ws/install/quadrotor_bringup/share/quadrotor_bringup
+[0.624s] creating /quadrotor/ros2_ws/install/quadrotor_bringup/share/quadrotor_bringup/launch
+[0.625s] symbolically linking /quadrotor/ros2_ws/build/quadrotor_bringup/launch/simulation.launch.py -> /quadrotor/ros2_ws/install/quadrotor_bringup/share/quadrotor_bringup/launch
+[0.643s] Invoked command in '/quadrotor/ros2_ws/build/quadrotor_bringup' returned '0': AMENT_PREFIX_PATH=/quadrotor/ros2_ws/install/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_msgs:/opt/ros/jazzy PYTHONPATH=/quadrotor/ros2_ws/build/quadrotor_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_nodes/lib/python3.12/site-packages:/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /quadrotor/ros2_ws/build/quadrotor_bringup/build --no-deps symlink_data

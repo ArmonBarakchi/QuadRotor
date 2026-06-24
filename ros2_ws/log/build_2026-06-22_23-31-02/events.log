@@ -1,0 +1,477 @@
+[0.000000] (-) TimerEvent: {}
+[0.003579] (quadrotor_msgs) JobQueued: {'identifier': 'quadrotor_msgs', 'dependencies': OrderedDict()}
+[0.006335] (quadrotor_nodes) JobQueued: {'identifier': 'quadrotor_nodes', 'dependencies': OrderedDict({'quadrotor_msgs': '/quadrotor/ros2_ws/install/quadrotor_msgs'})}
+[0.008561] (quadrotor_bringup) JobQueued: {'identifier': 'quadrotor_bringup', 'dependencies': OrderedDict({'quadrotor_msgs': '/quadrotor/ros2_ws/install/quadrotor_msgs', 'quadrotor_nodes': '/quadrotor/ros2_ws/install/quadrotor_nodes'})}
+[0.009880] (quadrotor_msgs) JobStarted: {'identifier': 'quadrotor_msgs'}
+[0.061171] (quadrotor_msgs) JobProgress: {'identifier': 'quadrotor_msgs', 'progress': 'cmake'}
+[0.075980] (quadrotor_msgs) Command: {'cmd': ['/usr/bin/cmake', '/quadrotor/ros2_ws/src/quadrotor_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/quadrotor/ros2_ws/install/quadrotor_msgs'], 'cwd': '/quadrotor/ros2_ws/build/quadrotor_msgs', 'env': OrderedDict({'HOSTNAME': '9569819c425a', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/quadrotor/ros2_ws/install/quadrotor_msgs/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/quadrotor/ros2_ws', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/quadrotor/ros2_ws/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/quadrotor/ros2_ws/install/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_msgs:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/quadrotor/ros2_ws/build/quadrotor_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/quadrotor/ros2_ws/build/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_nodes/lib/python3.12/site-packages:/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/quadrotor/ros2_ws/install/quadrotor_msgs:/quadrotor/ros2_ws/install/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_nodes:/opt/ros/jazzy'}), 'shell': False}
+[0.097671] (-) TimerEvent: {}
+[0.199410] (-) TimerEvent: {}
+[0.303150] (-) TimerEvent: {}
+[0.380671] (quadrotor_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.404563] (-) TimerEvent: {}
+[0.506474] (-) TimerEvent: {}
+[0.547523] (quadrotor_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.598084] (quadrotor_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.607856] (-) TimerEvent: {}
+[0.709299] (-) TimerEvent: {}
+[0.811268] (-) TimerEvent: {}
+[0.914358] (-) TimerEvent: {}
+[0.983894] (quadrotor_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.015540] (-) TimerEvent: {}
+[1.070033] (quadrotor_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.071254] (quadrotor_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.072674] (quadrotor_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.101416] (quadrotor_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.116461] (-) TimerEvent: {}
+[1.218291] (-) TimerEvent: {}
+[1.324739] (-) TimerEvent: {}
+[1.429608] (-) TimerEvent: {}
+[1.514799] (quadrotor_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.530377] (-) TimerEvent: {}
+[1.591817] (quadrotor_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.594851] (quadrotor_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.597447] (quadrotor_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.621124] (quadrotor_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[1.631755] (-) TimerEvent: {}
+[1.733504] (-) TimerEvent: {}
+[1.836959] (-) TimerEvent: {}
+[1.938360] (-) TimerEvent: {}
+[2.041681] (-) TimerEvent: {}
+[2.128370] (quadrotor_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[2.142305] (-) TimerEvent: {}
+[2.244194] (-) TimerEvent: {}
+[2.283696] (quadrotor_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[2.345911] (-) TimerEvent: {}
+[2.448557] (-) TimerEvent: {}
+[2.503491] (quadrotor_msgs) StdoutLine: {'line': b'-- Found std_msgs: 5.3.7 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[2.549380] (-) TimerEvent: {}
+[2.642395] (quadrotor_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[2.650879] (-) TimerEvent: {}
+[2.699318] (quadrotor_msgs) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[2.744547] (quadrotor_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.756974] (-) TimerEvent: {}
+[2.818272] (quadrotor_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.857435] (-) TimerEvent: {}
+[2.930036] (quadrotor_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[2.958382] (-) TimerEvent: {}
+[2.974897] (quadrotor_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[3.048721] (quadrotor_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[3.059577] (-) TimerEvent: {}
+[3.164198] (-) TimerEvent: {}
+[3.265239] (-) TimerEvent: {}
+[3.368206] (-) TimerEvent: {}
+[3.474463] (-) TimerEvent: {}
+[3.582084] (-) TimerEvent: {}
+[3.684387] (-) TimerEvent: {}
+[3.785558] (-) TimerEvent: {}
+[3.887882] (-) TimerEvent: {}
+[3.989340] (-) TimerEvent: {}
+[4.091395] (-) TimerEvent: {}
+[4.193652] (-) TimerEvent: {}
+[4.295427] (-) TimerEvent: {}
+[4.398697] (-) TimerEvent: {}
+[4.501875] (-) TimerEvent: {}
+[4.570846] (quadrotor_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[4.602536] (-) TimerEvent: {}
+[4.709309] (-) TimerEvent: {}
+[4.814856] (-) TimerEvent: {}
+[4.922525] (-) TimerEvent: {}
+[5.028457] (-) TimerEvent: {}
+[5.133308] (-) TimerEvent: {}
+[5.236268] (-) TimerEvent: {}
+[5.340223] (-) TimerEvent: {}
+[5.442290] (-) TimerEvent: {}
+[5.543546] (-) TimerEvent: {}
+[5.645718] (-) TimerEvent: {}
+[5.747350] (-) TimerEvent: {}
+[5.848269] (-) TimerEvent: {}
+[5.950264] (-) TimerEvent: {}
+[6.055210] (-) TimerEvent: {}
+[6.156863] (-) TimerEvent: {}
+[6.258957] (-) TimerEvent: {}
+[6.361523] (-) TimerEvent: {}
+[6.468590] (-) TimerEvent: {}
+[6.571096] (-) TimerEvent: {}
+[6.673853] (-) TimerEvent: {}
+[6.775269] (-) TimerEvent: {}
+[6.881204] (-) TimerEvent: {}
+[6.989425] (-) TimerEvent: {}
+[7.091021] (-) TimerEvent: {}
+[7.193450] (-) TimerEvent: {}
+[7.295562] (-) TimerEvent: {}
+[7.372894] (quadrotor_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.396876] (-) TimerEvent: {}
+[7.499435] (-) TimerEvent: {}
+[7.600320] (-) TimerEvent: {}
+[7.703533] (-) TimerEvent: {}
+[7.808275] (-) TimerEvent: {}
+[7.909742] (-) TimerEvent: {}
+[8.010266] (-) TimerEvent: {}
+[8.087735] (quadrotor_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.106381] (quadrotor_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[8.111013] (-) TimerEvent: {}
+[8.212375] (-) TimerEvent: {}
+[8.295331] (quadrotor_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[8.313872] (-) TimerEvent: {}
+[8.415399] (-) TimerEvent: {}
+[8.518136] (-) TimerEvent: {}
+[8.619225] (-) TimerEvent: {}
+[8.623914] (quadrotor_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[8.720204] (-) TimerEvent: {}
+[8.809797] (quadrotor_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[8.821183] (-) TimerEvent: {}
+[8.884680] (quadrotor_msgs) StdoutLine: {'line': b'-- Configuring done (8.8s)\n'}
+[8.922319] (-) TimerEvent: {}
+[9.023174] (-) TimerEvent: {}
+[9.124231] (-) TimerEvent: {}
+[9.162789] (quadrotor_msgs) StdoutLine: {'line': b'-- Generating done (0.3s)\n'}
+[9.225221] (-) TimerEvent: {}
+[9.227062] (quadrotor_msgs) StdoutLine: {'line': b'-- Build files have been written to: /quadrotor/ros2_ws/build/quadrotor_msgs\n'}
+[9.251789] (quadrotor_msgs) CommandEnded: {'returncode': 0}
+[9.255657] (quadrotor_msgs) JobProgress: {'identifier': 'quadrotor_msgs', 'progress': 'build'}
+[9.255873] (quadrotor_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/quadrotor/ros2_ws/build/quadrotor_msgs', '--', '-j8', '-l8'], 'cwd': '/quadrotor/ros2_ws/build/quadrotor_msgs', 'env': OrderedDict({'HOSTNAME': '9569819c425a', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/quadrotor/ros2_ws/install/quadrotor_msgs/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/quadrotor/ros2_ws', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/quadrotor/ros2_ws/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/quadrotor/ros2_ws/install/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_msgs:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/quadrotor/ros2_ws/build/quadrotor_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/quadrotor/ros2_ws/build/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_nodes/lib/python3.12/site-packages:/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/quadrotor/ros2_ws/install/quadrotor_msgs:/quadrotor/ros2_ws/install/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_nodes:/opt/ros/jazzy'}), 'shell': False}
+[9.305926] (quadrotor_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[9.311270] (quadrotor_msgs) StdoutLine: {'line': b'[  3%] Built target ament_cmake_python_symlink_quadrotor_msgs\n'}
+[9.312288] (quadrotor_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[9.326472] (-) TimerEvent: {}
+[9.429415] (-) TimerEvent: {}
+[9.477013] (quadrotor_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[9.478495] (quadrotor_msgs) StdoutLine: {'line': b'creating quadrotor_msgs.egg-info\n'}
+[9.485581] (quadrotor_msgs) StdoutLine: {'line': b'[  3%] Built target quadrotor_msgs__rosidl_generator_type_description\n'}
+[9.487514] (quadrotor_msgs) StdoutLine: {'line': b'writing quadrotor_msgs.egg-info/PKG-INFO\n'}
+[9.489131] (quadrotor_msgs) StdoutLine: {'line': b'writing dependency_links to quadrotor_msgs.egg-info/dependency_links.txt\n'}
+[9.491314] (quadrotor_msgs) StdoutLine: {'line': b'writing top-level names to quadrotor_msgs.egg-info/top_level.txt\n'}
+[9.493119] (quadrotor_msgs) StdoutLine: {'line': b"writing manifest file 'quadrotor_msgs.egg-info/SOURCES.txt'\n"}
+[9.504326] (quadrotor_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[9.514772] (quadrotor_msgs) StdoutLine: {'line': b'[  5%] Built target quadrotor_msgs__rs\n'}
+[9.516074] (quadrotor_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[9.530276] (-) TimerEvent: {}
+[9.548432] (quadrotor_msgs) StdoutLine: {'line': b"reading manifest file 'quadrotor_msgs.egg-info/SOURCES.txt'\n"}
+[9.563746] (quadrotor_msgs) StdoutLine: {'line': b"writing manifest file 'quadrotor_msgs.egg-info/SOURCES.txt'\n"}
+[9.597245] (quadrotor_msgs) StdoutLine: {'line': b'[  7%] Built target ament_cmake_python_build_quadrotor_msgs_egg\n'}
+[9.630353] (-) TimerEvent: {}
+[9.731629] (-) TimerEvent: {}
+[9.780353] (quadrotor_msgs) StdoutLine: {'line': b'[  7%] Built target quadrotor_msgs__cpp\n'}
+[9.832271] (-) TimerEvent: {}
+[9.837302] (quadrotor_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/drone_state__description.c.o\x1b[0m\n'}
+[9.840418] (quadrotor_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/drone_state__functions.c.o\x1b[0m\n'}
+[9.842545] (quadrotor_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/drone_state__type_support.c.o\x1b[0m\n'}
+[9.844721] (quadrotor_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/trajectory_point__description.c.o\x1b[0m\n'}
+[9.847055] (quadrotor_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/drone_control__description.c.o\x1b[0m\n'}
+[9.851491] (quadrotor_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/drone_control__functions.c.o\x1b[0m\n'}
+[9.858245] (quadrotor_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/trajectory_point__functions.c.o\x1b[0m\n'}
+[9.859813] (quadrotor_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/drone_control__type_support.c.o\x1b[0m\n'}
+[9.926514] (quadrotor_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_c.dir/rosidl_generator_c/quadrotor_msgs/msg/detail/trajectory_point__type_support.c.o\x1b[0m\n'}
+[9.933332] (-) TimerEvent: {}
+[9.983309] (quadrotor_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking C shared library libquadrotor_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[10.029207] (quadrotor_msgs) StdoutLine: {'line': b'[ 25%] Built target quadrotor_msgs__rosidl_generator_c\n'}
+[10.034225] (-) TimerEvent: {}
+[10.043003] (quadrotor_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.047752] (quadrotor_msgs) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.050895] (quadrotor_msgs) StdoutLine: {'line': b'[ 30%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[10.052587] (quadrotor_msgs) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.054332] (quadrotor_msgs) StdoutLine: {'line': b'[ 34%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[10.056030] (quadrotor_msgs) StdoutLine: {'line': b'[ 36%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.137142] (-) TimerEvent: {}
+[10.239150] (-) TimerEvent: {}
+[10.340379] (-) TimerEvent: {}
+[10.349993] (quadrotor_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/drone_control__type_support.cpp.o\x1b[0m\n'}
+[10.353625] (quadrotor_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/drone_state__type_support.cpp.o\x1b[0m\n'}
+[10.365434] (quadrotor_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/quadrotor_msgs/msg/trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[10.392394] (quadrotor_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/drone_state__type_support.cpp.o\x1b[0m\n'}
+[10.441220] (-) TimerEvent: {}
+[10.451353] (quadrotor_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/drone_state__type_support.cpp.o\x1b[0m\n'}
+[10.454778] (quadrotor_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/drone_state__type_support.c.o\x1b[0m\n'}
+[10.468573] (quadrotor_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/drone_state__type_support_c.cpp.o\x1b[0m\n'}
+[10.481923] (quadrotor_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/drone_state__type_support.cpp.o\x1b[0m\n'}
+[10.499678] (quadrotor_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/drone_control__type_support.c.o\x1b[0m\n'}
+[10.515814] (quadrotor_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/trajectory_point__type_support.c.o\x1b[0m\n'}
+[10.518787] (quadrotor_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libquadrotor_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[10.542378] (-) TimerEvent: {}
+[10.580484] (quadrotor_msgs) StdoutLine: {'line': b'[ 56%] Built target quadrotor_msgs__rosidl_typesupport_c\n'}
+[10.587685] (quadrotor_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/drone_control__type_support_c.cpp.o\x1b[0m\n'}
+[10.601799] (quadrotor_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/drone_control__type_support.cpp.o\x1b[0m\n'}
+[10.622074] (quadrotor_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/dds_fastrtps/trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[10.624698] (quadrotor_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking C shared library libquadrotor_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[10.643207] (-) TimerEvent: {}
+[10.677472] (quadrotor_msgs) StdoutLine: {'line': b'[ 63%] Built target quadrotor_msgs__rosidl_typesupport_introspection_c\n'}
+[10.683798] (quadrotor_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/drone_control__type_support.cpp.o\x1b[0m\n'}
+[10.744256] (-) TimerEvent: {}
+[10.845602] (-) TimerEvent: {}
+[10.946823] (-) TimerEvent: {}
+[11.016398] (quadrotor_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/drone_control__type_support.cpp.o\x1b[0m\n'}
+[11.047367] (-) TimerEvent: {}
+[11.071769] (quadrotor_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/quadrotor_msgs/msg/detail/trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[11.138684] (quadrotor_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/quadrotor_msgs/msg/detail/trajectory_point__type_support_c.cpp.o\x1b[0m\n'}
+[11.148319] (-) TimerEvent: {}
+[11.250207] (-) TimerEvent: {}
+[11.303733] (quadrotor_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/quadrotor_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/quadrotor_msgs/msg/trajectory_point__type_support.cpp.o\x1b[0m\n'}
+[11.351340] (-) TimerEvent: {}
+[11.452300] (-) TimerEvent: {}
+[11.461902] (quadrotor_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libquadrotor_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[11.553265] (-) TimerEvent: {}
+[11.553859] (quadrotor_msgs) StdoutLine: {'line': b'[ 74%] Built target quadrotor_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[11.579789] (quadrotor_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libquadrotor_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[11.635995] (quadrotor_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libquadrotor_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[11.649187] (quadrotor_msgs) StdoutLine: {'line': b'[ 78%] Built target quadrotor_msgs__rosidl_typesupport_introspection_cpp\n'}
+[11.654616] (-) TimerEvent: {}
+[11.659399] (quadrotor_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libquadrotor_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[11.678404] (quadrotor_msgs) StdoutLine: {'line': b'[ 80%] Built target quadrotor_msgs__rosidl_typesupport_cpp\n'}
+[11.716980] (quadrotor_msgs) StdoutLine: {'line': b'[ 80%] Built target quadrotor_msgs__rosidl_typesupport_fastrtps_c\n'}
+[11.735899] (quadrotor_msgs) StdoutLine: {'line': b'[ 80%] Built target quadrotor_msgs\n'}
+[11.750380] (quadrotor_msgs) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[11.755596] (-) TimerEvent: {}
+[11.857907] (-) TimerEvent: {}
+[11.960908] (-) TimerEvent: {}
+[12.031192] (quadrotor_msgs) StdoutLine: {'line': b'[ 81%] Built target quadrotor_msgs__py\n'}
+[12.047020] (quadrotor_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_drone_state_s.c.o\x1b[0m\n'}
+[12.047830] (quadrotor_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_trajectory_point_s.c.o\x1b[0m\n'}
+[12.048553] (quadrotor_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs__rosidl_generator_py.dir/rosidl_generator_py/quadrotor_msgs/msg/_drone_control_s.c.o\x1b[0m\n'}
+[12.061332] (-) TimerEvent: {}
+[12.162899] (-) TimerEvent: {}
+[12.177221] (quadrotor_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library libquadrotor_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[12.217167] (quadrotor_msgs) StdoutLine: {'line': b'[ 89%] Built target quadrotor_msgs__rosidl_generator_py\n'}
+[12.233271] (quadrotor_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[12.236731] (quadrotor_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs_s__rosidl_typesupport_c.dir/rosidl_generator_py/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[12.237622] (quadrotor_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/quadrotor_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[12.263377] (-) TimerEvent: {}
+[12.329683] (quadrotor_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[12.335989] (quadrotor_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[12.336842] (quadrotor_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[12.359569] (quadrotor_msgs) StdoutLine: {'line': b'[100%] Built target quadrotor_msgs_s__rosidl_typesupport_c\n'}
+[12.364143] (-) TimerEvent: {}
+[12.369467] (quadrotor_msgs) StdoutLine: {'line': b'[100%] Built target quadrotor_msgs_s__rosidl_typesupport_introspection_c\n'}
+[12.369995] (quadrotor_msgs) StdoutLine: {'line': b'[100%] Built target quadrotor_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[12.391484] (quadrotor_msgs) CommandEnded: {'returncode': 0}
+[12.395968] (quadrotor_msgs) JobProgress: {'identifier': 'quadrotor_msgs', 'progress': 'install'}
+[12.403785] (quadrotor_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/quadrotor/ros2_ws/build/quadrotor_msgs'], 'cwd': '/quadrotor/ros2_ws/build/quadrotor_msgs', 'env': OrderedDict({'HOSTNAME': '9569819c425a', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/quadrotor/ros2_ws/install/quadrotor_msgs/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/quadrotor/ros2_ws', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/quadrotor/ros2_ws/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/quadrotor/ros2_ws/install/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_msgs:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/quadrotor/ros2_ws/build/quadrotor_msgs', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/quadrotor/ros2_ws/build/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_nodes/lib/python3.12/site-packages:/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/quadrotor/ros2_ws/install/quadrotor_msgs:/quadrotor/ros2_ws/install/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_nodes:/opt/ros/jazzy'}), 'shell': False}
+[12.410675] (quadrotor_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.422081] (quadrotor_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[12.430912] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/ament_index/resource_index/rosidl_interfaces/quadrotor_msgs\n'}
+[12.437590] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/DroneState.json\n'}
+[12.442995] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/DroneControl.json\n'}
+[12.448394] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/TrajectoryPoint.json\n'}
+[12.456018] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__functions.h\n'}
+[12.461400] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__struct.h\n'}
+[12.465941] (-) TimerEvent: {}
+[12.466642] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__type_support.h\n'}
+[12.472492] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__functions.h\n'}
+[12.477865] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__struct.h\n'}
+[12.483515] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__type_support.h\n'}
+[12.489003] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__functions.h\n'}
+[12.493901] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__struct.h\n'}
+[12.499608] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__type_support.h\n'}
+[12.504932] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/drone_control.h\n'}
+[12.510746] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/drone_state.h\n'}
+[12.516257] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[12.522962] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/trajectory_point.h\n'}
+[12.528566] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/environment/library_path.sh\n'}
+[12.534113] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/environment/library_path.dsv\n'}
+[12.541145] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__rosidl_typesupport_fastrtps_c.h\n'}
+[12.546749] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__rosidl_typesupport_fastrtps_c.h\n'}
+[12.551924] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_c.h\n'}
+[12.557325] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[12.564032] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__builder.hpp\n'}
+[12.566326] (-) TimerEvent: {}
+[12.569492] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__struct.hpp\n'}
+[12.574760] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__traits.hpp\n'}
+[12.579740] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__type_support.hpp\n'}
+[12.630432] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__builder.hpp\n'}
+[12.636354] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__struct.hpp\n'}
+[12.641228] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__traits.hpp\n'}
+[12.646719] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__type_support.hpp\n'}
+[12.651955] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__builder.hpp\n'}
+[12.657330] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__struct.hpp\n'}
+[12.662381] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__traits.hpp\n'}
+[12.667181] (-) TimerEvent: {}
+[12.668024] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__type_support.hpp\n'}
+[12.673681] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/drone_control.hpp\n'}
+[12.678811] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/drone_state.hpp\n'}
+[12.684252] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[12.689004] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/trajectory_point.hpp\n'}
+[12.696248] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.701357] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.706928] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[12.712073] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[12.718665] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__rosidl_typesupport_introspection_c.h\n'}
+[12.723901] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__rosidl_typesupport_introspection_c.h\n'}
+[12.729027] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_c.h\n'}
+[12.736383] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[12.742659] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.748408] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.753504] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[12.758533] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/environment/pythonpath.sh\n'}
+[12.764214] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/environment/pythonpath.dsv\n'}
+[12.768210] (-) TimerEvent: {}
+[12.771561] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs-0.0.1-py3.12.egg-info/PKG-INFO\n'}
+[12.779176] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs-0.0.1-py3.12.egg-info/SOURCES.txt\n'}
+[12.786340] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs-0.0.1-py3.12.egg-info/dependency_links.txt\n'}
+[12.793263] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs-0.0.1-py3.12.egg-info/top_level.txt\n'}
+[12.802522] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/__init__.py\n'}
+[12.810341] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[12.819354] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[12.829171] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[12.840188] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/__init__.py\n'}
+[12.847451] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/_drone_control.py\n'}
+[12.854505] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/_drone_control_s.c\n'}
+[12.861269] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/_drone_state.py\n'}
+[12.868168] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/_drone_state_s.c\n'}
+[12.868729] (-) TimerEvent: {}
+[12.875233] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/_trajectory_point.py\n'}
+[12.882516] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/_trajectory_point_s.c\n'}
+[12.891064] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_c.so\n'}
+[12.898588] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[12.905452] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[12.918024] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[12.918805] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[12.919521] (quadrotor_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_c.so\n'}
+[12.920543] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/ament_index/resource_index/rust_packages/quadrotor_msgs\n'}
+[12.929380] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/rust/Cargo.toml\n'}
+[12.937195] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/rust/build.rs\n'}
+[12.949154] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/rust/src/lib.rs\n'}
+[12.958404] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/rust/src/msg.rs\n'}
+[12.969426] (-) TimerEvent: {}
+[12.969902] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/rust/src/msg/rmw.rs\n'}
+[12.979019] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/DroneState.idl\n'}
+[12.986596] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/DroneControl.idl\n'}
+[12.993748] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/TrajectoryPoint.idl\n'}
+[13.000773] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/DroneState.msg\n'}
+[13.008420] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/DroneControl.msg\n'}
+[13.015340] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/TrajectoryPoint.msg\n'}
+[13.023132] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/ament_index/resource_index/package_run_dependencies/quadrotor_msgs\n'}
+[13.030388] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/ament_index/resource_index/parent_prefix_path/quadrotor_msgs\n'}
+[13.037746] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/environment/ament_prefix_path.sh\n'}
+[13.044638] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/environment/ament_prefix_path.dsv\n'}
+[13.051983] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/environment/path.sh\n'}
+[13.058892] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/environment/path.dsv\n'}
+[13.065920] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/local_setup.bash\n'}
+[13.070432] (-) TimerEvent: {}
+[13.072444] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/local_setup.sh\n'}
+[13.080473] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/local_setup.zsh\n'}
+[13.087557] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/local_setup.dsv\n'}
+[13.094625] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/package.dsv\n'}
+[13.101971] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/ament_index/resource_index/packages/quadrotor_msgs\n'}
+[13.110331] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[13.117771] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.125122] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.131847] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[13.138953] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[13.145831] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[13.152958] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[13.159601] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgsConfig.cmake\n'}
+[13.166638] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgsConfig-version.cmake\n'}
+[13.171144] (-) TimerEvent: {}
+[13.173539] (quadrotor_msgs) StdoutLine: {'line': b'-- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/package.xml\n'}
+[13.180378] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_generator_c.so\n'}
+[13.183969] (quadrotor_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_generator_c.so" to ""\n'}
+[13.184439] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[13.187767] (quadrotor_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[13.188223] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[13.195175] (quadrotor_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[13.195697] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_introspection_c.so\n'}
+[13.199672] (quadrotor_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[13.200067] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_c.so\n'}
+[13.204279] (quadrotor_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_c.so" to ""\n'}
+[13.204668] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[13.209521] (quadrotor_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[13.210685] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_cpp.so\n'}
+[13.233249] (quadrotor_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[13.270416] (quadrotor_msgs) StdoutLine: {'line': b"Listing '/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs'...\n"}
+[13.270901] (quadrotor_msgs) StdoutLine: {'line': b"Compiling '/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/__init__.py'...\n"}
+[13.271292] (-) TimerEvent: {}
+[13.271456] (quadrotor_msgs) StdoutLine: {'line': b"Listing '/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg'...\n"}
+[13.272238] (quadrotor_msgs) StdoutLine: {'line': b"Compiling '/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/__init__.py'...\n"}
+[13.272606] (quadrotor_msgs) StdoutLine: {'line': b"Compiling '/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/_drone_control.py'...\n"}
+[13.273000] (quadrotor_msgs) StdoutLine: {'line': b"Compiling '/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/_drone_state.py'...\n"}
+[13.273422] (quadrotor_msgs) StdoutLine: {'line': b"Compiling '/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/_trajectory_point.py'...\n"}
+[13.275274] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_generator_py.so\n'}
+[13.280056] (quadrotor_msgs) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_generator_py.so" to ""\n'}
+[13.280755] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_cExport.cmake\n'}
+[13.283143] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[13.285115] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[13.287629] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[13.289343] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_cppExport.cmake\n'}
+[13.291314] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[13.293760] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[13.295701] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[13.298720] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[13.301423] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_cExport.cmake\n'}
+[13.303635] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[13.305624] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[13.308810] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[13.310532] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[13.312458] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[13.314313] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_pyExport.cmake\n'}
+[13.315919] (quadrotor_msgs) StdoutLine: {'line': b'-- Installing: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[13.320212] (quadrotor_msgs) CommandEnded: {'returncode': 0}
+[13.372996] (-) TimerEvent: {}
+[13.379145] (quadrotor_msgs) JobEnded: {'identifier': 'quadrotor_msgs', 'rc': 0}
+[13.380845] (quadrotor_nodes) JobStarted: {'identifier': 'quadrotor_nodes'}
+[13.473343] (-) TimerEvent: {}
+[13.574920] (-) TimerEvent: {}
+[13.676516] (-) TimerEvent: {}
+[13.766322] (quadrotor_nodes) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/quadrotor/ros2_ws/build/quadrotor_nodes/build', '--no-deps', 'symlink_data'], 'cwd': '/quadrotor/ros2_ws/build/quadrotor_nodes', 'env': {'HOSTNAME': '9569819c425a', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/quadrotor/ros2_ws/install/quadrotor_msgs/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/quadrotor/ros2_ws', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/quadrotor/ros2_ws/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/quadrotor/ros2_ws/install/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_msgs:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/quadrotor/ros2_ws/build/quadrotor_nodes', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/quadrotor/ros2_ws/build/quadrotor_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/quadrotor/ros2_ws/install/quadrotor_nodes/lib/python3.12/site-packages:/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_nodes/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/quadrotor/ros2_ws/install/quadrotor_msgs'}, 'shell': False}
+[13.777373] (-) TimerEvent: {}
+[13.878193] (-) TimerEvent: {}
+[13.904660] (quadrotor_nodes) StdoutLine: {'line': b'running develop\n'}
+[13.969442] (quadrotor_nodes) StdoutLine: {'line': b'running egg_info\n'}
+[13.970310] (quadrotor_nodes) StdoutLine: {'line': b'creating quadrotor_nodes.egg-info\n'}
+[13.978914] (quadrotor_nodes) StdoutLine: {'line': b'writing quadrotor_nodes.egg-info/PKG-INFO\n'}
+[13.979563] (-) TimerEvent: {}
+[13.980285] (quadrotor_nodes) StdoutLine: {'line': b'writing dependency_links to quadrotor_nodes.egg-info/dependency_links.txt\n'}
+[13.980968] (quadrotor_nodes) StdoutLine: {'line': b'writing entry points to quadrotor_nodes.egg-info/entry_points.txt\n'}
+[13.982147] (quadrotor_nodes) StdoutLine: {'line': b'writing requirements to quadrotor_nodes.egg-info/requires.txt\n'}
+[13.982680] (quadrotor_nodes) StdoutLine: {'line': b'writing top-level names to quadrotor_nodes.egg-info/top_level.txt\n'}
+[13.983278] (quadrotor_nodes) StdoutLine: {'line': b"writing manifest file 'quadrotor_nodes.egg-info/SOURCES.txt'\n"}
+[13.998819] (quadrotor_nodes) StdoutLine: {'line': b"reading manifest file 'quadrotor_nodes.egg-info/SOURCES.txt'\n"}
+[14.000243] (quadrotor_nodes) StdoutLine: {'line': b"writing manifest file 'quadrotor_nodes.egg-info/SOURCES.txt'\n"}
+[14.007560] (quadrotor_nodes) StdoutLine: {'line': b'running build_ext\n'}
+[14.008140] (quadrotor_nodes) StdoutLine: {'line': b'Creating /quadrotor/ros2_ws/install/quadrotor_nodes/lib/python3.12/site-packages/quadrotor-nodes.egg-link (link to .)\n'}
+[14.009277] (quadrotor_nodes) StdoutLine: {'line': b'Installing controller_node script to /quadrotor/ros2_ws/install/quadrotor_nodes/lib/quadrotor_nodes\n'}
+[14.010087] (quadrotor_nodes) StdoutLine: {'line': b'Installing estimator_node script to /quadrotor/ros2_ws/install/quadrotor_nodes/lib/quadrotor_nodes\n'}
+[14.010871] (quadrotor_nodes) StdoutLine: {'line': b'Installing trajectory_node script to /quadrotor/ros2_ws/install/quadrotor_nodes/lib/quadrotor_nodes\n'}
+[14.011894] (quadrotor_nodes) StdoutLine: {'line': b'\n'}
+[14.012350] (quadrotor_nodes) StdoutLine: {'line': b'Installed /quadrotor/ros2_ws/build/quadrotor_nodes\n'}
+[14.012831] (quadrotor_nodes) StdoutLine: {'line': b'running symlink_data\n'}
+[14.013306] (quadrotor_nodes) StdoutLine: {'line': b'creating /quadrotor/ros2_ws/install/quadrotor_nodes/share/ament_index\n'}
+[14.013729] (quadrotor_nodes) StdoutLine: {'line': b'creating /quadrotor/ros2_ws/install/quadrotor_nodes/share/ament_index/resource_index\n'}
+[14.014089] (quadrotor_nodes) StdoutLine: {'line': b'creating /quadrotor/ros2_ws/install/quadrotor_nodes/share/ament_index/resource_index/packages\n'}
+[14.014471] (quadrotor_nodes) StdoutLine: {'line': b'symbolically linking /quadrotor/ros2_ws/build/quadrotor_nodes/resource/quadrotor_nodes -> /quadrotor/ros2_ws/install/quadrotor_nodes/share/ament_index/resource_index/packages\n'}
+[14.014844] (quadrotor_nodes) StdoutLine: {'line': b'symbolically linking /quadrotor/ros2_ws/build/quadrotor_nodes/package.xml -> /quadrotor/ros2_ws/install/quadrotor_nodes/share/quadrotor_nodes\n'}
+[14.033600] (quadrotor_nodes) CommandEnded: {'returncode': 0}
+[14.050049] (quadrotor_nodes) JobEnded: {'identifier': 'quadrotor_nodes', 'rc': 0}
+[14.051828] (quadrotor_bringup) JobStarted: {'identifier': 'quadrotor_bringup'}
+[14.080288] (-) TimerEvent: {}
+[14.182399] (-) TimerEvent: {}
+[14.283888] (-) TimerEvent: {}
+[14.385218] (-) TimerEvent: {}
+[14.416739] (quadrotor_bringup) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/quadrotor/ros2_ws/build/quadrotor_bringup/build', '--no-deps', 'symlink_data'], 'cwd': '/quadrotor/ros2_ws/build/quadrotor_bringup', 'env': {'HOSTNAME': '9569819c425a', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/quadrotor/ros2_ws/install/quadrotor_msgs/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/lib', 'HOME': '/root', 'OLDPWD': '/quadrotor/ros2_ws', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/quadrotor/ros2_ws/install', 'ROS_DISTRO': 'jazzy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'LANG': 'C.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/quadrotor/ros2_ws/install/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_msgs:/opt/ros/jazzy', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/quadrotor/ros2_ws/build/quadrotor_bringup', 'LC_ALL': 'C.UTF-8', 'PYTHONPATH': '/quadrotor/ros2_ws/build/quadrotor_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_nodes/lib/python3.12/site-packages:/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/quadrotor/ros2_ws/install/quadrotor_msgs'}, 'shell': False}
+[14.486374] (-) TimerEvent: {}
+[14.556855] (quadrotor_bringup) StdoutLine: {'line': b'running develop\n'}
+[14.587759] (-) TimerEvent: {}
+[14.627134] (quadrotor_bringup) StdoutLine: {'line': b'running egg_info\n'}
+[14.629832] (quadrotor_bringup) StdoutLine: {'line': b'creating quadrotor_bringup.egg-info\n'}
+[14.640516] (quadrotor_bringup) StdoutLine: {'line': b'writing quadrotor_bringup.egg-info/PKG-INFO\n'}
+[14.641609] (quadrotor_bringup) StdoutLine: {'line': b'writing dependency_links to quadrotor_bringup.egg-info/dependency_links.txt\n'}
+[14.642329] (quadrotor_bringup) StdoutLine: {'line': b'writing requirements to quadrotor_bringup.egg-info/requires.txt\n'}
+[14.642939] (quadrotor_bringup) StdoutLine: {'line': b'writing top-level names to quadrotor_bringup.egg-info/top_level.txt\n'}
+[14.643485] (quadrotor_bringup) StdoutLine: {'line': b"writing manifest file 'quadrotor_bringup.egg-info/SOURCES.txt'\n"}
+[14.657350] (quadrotor_bringup) StdoutLine: {'line': b"reading manifest file 'quadrotor_bringup.egg-info/SOURCES.txt'\n"}
+[14.658982] (quadrotor_bringup) StdoutLine: {'line': b"writing manifest file 'quadrotor_bringup.egg-info/SOURCES.txt'\n"}
+[14.666273] (quadrotor_bringup) StdoutLine: {'line': b'running build_ext\n'}
+[14.668599] (quadrotor_bringup) StdoutLine: {'line': b'Creating /quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages/quadrotor-bringup.egg-link (link to .)\n'}
+[14.669860] (quadrotor_bringup) StdoutLine: {'line': b'\n'}
+[14.670940] (quadrotor_bringup) StdoutLine: {'line': b'Installed /quadrotor/ros2_ws/build/quadrotor_bringup\n'}
+[14.671825] (quadrotor_bringup) StdoutLine: {'line': b'running symlink_data\n'}
+[14.672347] (quadrotor_bringup) StdoutLine: {'line': b'creating /quadrotor/ros2_ws/install/quadrotor_bringup/share/ament_index\n'}
+[14.672803] (quadrotor_bringup) StdoutLine: {'line': b'creating /quadrotor/ros2_ws/install/quadrotor_bringup/share/ament_index/resource_index\n'}
+[14.673292] (quadrotor_bringup) StdoutLine: {'line': b'creating /quadrotor/ros2_ws/install/quadrotor_bringup/share/ament_index/resource_index/packages\n'}
+[14.673742] (quadrotor_bringup) StdoutLine: {'line': b'symbolically linking /quadrotor/ros2_ws/build/quadrotor_bringup/resource/quadrotor_bringup -> /quadrotor/ros2_ws/install/quadrotor_bringup/share/ament_index/resource_index/packages\n'}
+[14.675412] (quadrotor_bringup) StdoutLine: {'line': b'symbolically linking /quadrotor/ros2_ws/build/quadrotor_bringup/package.xml -> /quadrotor/ros2_ws/install/quadrotor_bringup/share/quadrotor_bringup\n'}
+[14.676014] (quadrotor_bringup) StdoutLine: {'line': b'creating /quadrotor/ros2_ws/install/quadrotor_bringup/share/quadrotor_bringup/launch\n'}
+[14.676413] (quadrotor_bringup) StdoutLine: {'line': b'symbolically linking /quadrotor/ros2_ws/build/quadrotor_bringup/launch/simulation.launch.py -> /quadrotor/ros2_ws/install/quadrotor_bringup/share/quadrotor_bringup/launch\n'}
+[14.689096] (-) TimerEvent: {}
+[14.694054] (quadrotor_bringup) CommandEnded: {'returncode': 0}
+[14.711143] (quadrotor_bringup) JobEnded: {'identifier': 'quadrotor_bringup', 'rc': 0}
+[14.712648] (-) EventReactorShutdown: {}

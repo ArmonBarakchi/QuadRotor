@@ -1,0 +1,12 @@
+package.xml
+setup.cfg
+setup.py
+launch/simulation.launch.py
+quadrotor_bringup/__init__.py
+quadrotor_bringup.egg-info/PKG-INFO
+quadrotor_bringup.egg-info/SOURCES.txt
+quadrotor_bringup.egg-info/dependency_links.txt
+quadrotor_bringup.egg-info/requires.txt
+quadrotor_bringup.egg-info/top_level.txt
+quadrotor_bringup.egg-info/zip-safe
+resource/quadrotor_bringup

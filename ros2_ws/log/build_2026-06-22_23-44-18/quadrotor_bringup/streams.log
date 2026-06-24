@@ -1,0 +1,15 @@
+[0.431s] Invoking command in '/quadrotor/ros2_ws/build/quadrotor_bringup': AMENT_PREFIX_PATH=/quadrotor/ros2_ws/install/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_msgs:/opt/ros/jazzy PYTHONPATH=/quadrotor/ros2_ws/build/quadrotor_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_nodes/lib/python3.12/site-packages:/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /quadrotor/ros2_ws/build/quadrotor_bringup/build --no-deps symlink_data
+[0.576s] running develop
+[0.665s] running egg_info
+[0.673s] writing quadrotor_bringup.egg-info/PKG-INFO
+[0.673s] writing dependency_links to quadrotor_bringup.egg-info/dependency_links.txt
+[0.674s] writing requirements to quadrotor_bringup.egg-info/requires.txt
+[0.675s] writing top-level names to quadrotor_bringup.egg-info/top_level.txt
+[0.689s] reading manifest file 'quadrotor_bringup.egg-info/SOURCES.txt'
+[0.691s] writing manifest file 'quadrotor_bringup.egg-info/SOURCES.txt'
+[0.698s] running build_ext
+[0.699s] Creating /quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages/quadrotor-bringup.egg-link (link to .)
+[0.700s] 
+[0.701s] Installed /quadrotor/ros2_ws/build/quadrotor_bringup
+[0.701s] running symlink_data
+[0.720s] Invoked command in '/quadrotor/ros2_ws/build/quadrotor_bringup' returned '0': AMENT_PREFIX_PATH=/quadrotor/ros2_ws/install/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_msgs:/opt/ros/jazzy PYTHONPATH=/quadrotor/ros2_ws/build/quadrotor_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_nodes/lib/python3.12/site-packages:/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /quadrotor/ros2_ws/build/quadrotor_bringup/build --no-deps symlink_data

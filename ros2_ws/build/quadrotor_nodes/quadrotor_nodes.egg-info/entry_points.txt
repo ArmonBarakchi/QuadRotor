@@ -1,0 +1,4 @@
+[console_scripts]
+controller_node = quadrotor_nodes.controller_node:main
+estimator_node = quadrotor_nodes.estimator_node:main
+trajectory_node = quadrotor_nodes.trajectory_node:main

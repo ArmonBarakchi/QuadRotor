@@ -1,0 +1,14 @@
+{
+  "package_name": "quadrotor_msgs",
+  "output_dir": "/quadrotor/ros2_ws/build/quadrotor_msgs/rosidl_generator_type_description/quadrotor_msgs",
+  "idl_tuples": [
+    "/quadrotor/ros2_ws/build/quadrotor_msgs/rosidl_adapter/quadrotor_msgs:msg/DroneState.idl",
+    "/quadrotor/ros2_ws/build/quadrotor_msgs/rosidl_adapter/quadrotor_msgs:msg/DroneControl.idl",
+    "/quadrotor/ros2_ws/build/quadrotor_msgs/rosidl_adapter/quadrotor_msgs:msg/TrajectoryPoint.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces",
+    "geometry_msgs:/opt/ros/jazzy/share/geometry_msgs"
+  ]
+}
