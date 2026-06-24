@@ -1,1 +1,0 @@
-/quadrotor/ros2_ws/build/quadrotor_msgs/ament_cmake_core/quadrotor_msgsConfig.cmake

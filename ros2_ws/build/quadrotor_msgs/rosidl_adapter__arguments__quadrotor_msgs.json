@@ -1,8 +1,0 @@
-{
-  "package_name": "quadrotor_msgs",
-  "non_idl_tuples": [
-    "/quadrotor/ros2_ws/src/quadrotor_msgs:msg/DroneState.msg",
-    "/quadrotor/ros2_ws/src/quadrotor_msgs:msg/DroneControl.msg",
-    "/quadrotor/ros2_ws/src/quadrotor_msgs:msg/TrajectoryPoint.msg"
-  ]
-}

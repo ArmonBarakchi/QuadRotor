@@ -1,1 +1,0 @@
-/quadrotor/ros2_ws/build/quadrotor_msgs/rosidl_generator_c/quadrotor_msgs/msg/detail/drone_state__type_support.h
