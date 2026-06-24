@@ -1,0 +1,21 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/drone_control__type_support.c.o"
+  "CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/drone_control__type_support.c.o.d"
+  "CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/drone_state__type_support.c.o"
+  "CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/drone_state__type_support.c.o.d"
+  "CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/trajectory_point__type_support.c.o"
+  "CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/trajectory_point__type_support.c.o.d"
+  "libquadrotor_msgs__rosidl_typesupport_introspection_c.pdb"
+  "libquadrotor_msgs__rosidl_typesupport_introspection_c.so"
+  "rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/drone_control__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/drone_control__type_support.c"
+  "rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/drone_state__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/drone_state__type_support.c"
+  "rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/quadrotor_msgs/msg/detail/trajectory_point__type_support.c"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/quadrotor_msgs__rosidl_typesupport_introspection_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

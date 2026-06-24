@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/quadrotor/ros2_ws/build/quadrotor_msgs/rosidl_generator_py/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_c.so" "TARGETS" "quadrotor_msgs_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/quadrotor_msgs")

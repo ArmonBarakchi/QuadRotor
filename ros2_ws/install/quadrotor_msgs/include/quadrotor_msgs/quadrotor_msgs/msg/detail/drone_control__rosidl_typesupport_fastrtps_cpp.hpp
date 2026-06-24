@@ -1,0 +1,1 @@
+/quadrotor/ros2_ws/build/quadrotor_msgs/rosidl_typesupport_fastrtps_cpp/quadrotor_msgs/msg/detail/drone_control__rosidl_typesupport_fastrtps_cpp.hpp

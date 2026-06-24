@@ -1,0 +1,77 @@
+<mujoco model="quadrotor_forest">
+  <compiler angle="radian" autolimits="true"/>
+  <option gravity="0 0 -9.81" timestep="0.002"/>
+  <default>
+    <joint damping="0.0005"/>
+    <geom rgba="0.3 0.3 0.3 1"/>
+  </default>
+  <asset>
+    <material name="body_mat"     rgba="0.2 0.2 0.8 1"/>
+    <material name="rotor_mat"    rgba="0.8 0.2 0.2 1"/>
+    <material name="arm_mat"      rgba="0.15 0.15 0.15 1"/>
+    <material name="obstacle_mat" rgba="0.9 0.2 0.2 0.6"/>
+  </asset>
+  <worldbody>
+    <light pos="0 0 5" dir="0 0 -1" diffuse="1 1 1"/>
+    <light pos="1 1 3" dir="-1 -1 -2" diffuse="0.5 0.5 0.5"/>
+    <!-- group=0: ground/drone excluded from LiDAR -->
+    <geom name="ground" type="plane" size="10 10 0.1"
+          rgba="0.5 0.5 0.5 1" condim="3" group="0"/>
+    <!-- group=1: obstacles detected by LiDAR -->
+    <geom name="obs1" type="sphere" size="0.15"
+          pos="-0.10 0.30 1.30"
+          material="obstacle_mat" condim="3" group="1"/>
+    <geom name="obs2" type="sphere" size="0.15"
+          pos="-0.10 -0.30 1.30"
+          material="obstacle_mat" condim="3" group="1"/>
+    <geom name="obs3" type="sphere" size="0.15"
+          pos="-0.40 0.00 1.10"
+          material="obstacle_mat" condim="3" group="1"/>
+    <geom name="obs4" type="sphere" size="0.15"
+          pos="-0.60 0.40 1.50"
+          material="obstacle_mat" condim="3" group="1"/>
+    <geom name="obs5" type="sphere" size="0.15"
+          pos="-0.60 -0.40 1.50"
+          material="obstacle_mat" condim="3" group="1"/>
+    <geom name="obs6" type="sphere" size="0.15"
+          pos="-0.30 0.60 1.20"
+          material="obstacle_mat" condim="3" group="1"/>
+    <!-- Quadrotor body — group=0 -->
+    <body name="quadrotor" pos="0 0 0.1">
+      <freejoint name="root"/>
+      <geom name="hub" type="cylinder" size="0.03 0.008"
+            material="body_mat" mass="0.027" condim="3" group="0"/>
+      <site name="imu" pos="0 0 0" size="0.005"/>
+      <geom name="arm1" type="capsule" fromto="0 0 0  0.0325 0.0325 0"
+            size="0.004" material="arm_mat" mass="0.002" group="0"/>
+      <geom name="arm2" type="capsule" fromto="0 0 0  0.0325 -0.0325 0"
+            size="0.004" material="arm_mat" mass="0.002" group="0"/>
+      <geom name="arm3" type="capsule" fromto="0 0 0  -0.0325 -0.0325 0"
+            size="0.004" material="arm_mat" mass="0.002" group="0"/>
+      <geom name="arm4" type="capsule" fromto="0 0 0  -0.0325 0.0325 0"
+            size="0.004" material="arm_mat" mass="0.002" group="0"/>
+      <geom name="rotor1" type="cylinder" size="0.023 0.002"
+            pos=" 0.0325  0.0325 0.006" material="rotor_mat" mass="0.001" group="0"/>
+      <geom name="rotor2" type="cylinder" size="0.023 0.002"
+            pos=" 0.0325 -0.0325 0.006" material="rotor_mat" mass="0.001" group="0"/>
+      <geom name="rotor3" type="cylinder" size="0.023 0.002"
+            pos="-0.0325 -0.0325 0.006" material="rotor_mat" mass="0.001" group="0"/>
+      <geom name="rotor4" type="cylinder" size="0.023 0.002"
+            pos="-0.0325  0.0325 0.006" material="rotor_mat" mass="0.001" group="0"/>
+      <site name="rotor1_site" pos=" 0.0325  0.0325 0.006" size="0.003"/>
+      <site name="rotor2_site" pos=" 0.0325 -0.0325 0.006" size="0.003"/>
+      <site name="rotor3_site" pos="-0.0325 -0.0325 0.006" size="0.003"/>
+      <site name="rotor4_site" pos="-0.0325  0.0325 0.006" size="0.003"/>
+    </body>
+  </worldbody>
+  <actuator>
+    <general name="rotor1" site="rotor1_site" gear="0 0 1 0 0 0" ctrllimited="true" ctrlrange="0 0.15"/>
+    <general name="rotor2" site="rotor2_site" gear="0 0 1 0 0 0" ctrllimited="true" ctrlrange="0 0.15"/>
+    <general name="rotor3" site="rotor3_site" gear="0 0 1 0 0 0" ctrllimited="true" ctrlrange="0 0.15"/>
+    <general name="rotor4" site="rotor4_site" gear="0 0 1 0 0 0" ctrllimited="true" ctrlrange="0 0.15"/>
+  </actuator>
+  <sensor>
+    <accelerometer name="accel" site="imu"/>
+    <gyro          name="gyro"  site="imu"/>
+  </sensor>
+</mujoco>

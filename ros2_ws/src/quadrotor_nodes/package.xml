@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>quadrotor_nodes</name>
+  <version>0.0.1</version>
+  <description>Quadrotor trajectory, controller, and estimator nodes</description>
+  <maintainer email="you@example.com">you</maintainer>
+  <license>MIT</license>
+
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>quadrotor_msgs</depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

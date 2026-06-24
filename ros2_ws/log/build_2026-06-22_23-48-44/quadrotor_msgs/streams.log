@@ -1,0 +1,164 @@
+[0.016s] Invoking command in '/quadrotor/ros2_ws/build/quadrotor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/quadrotor/ros2_ws/install/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_nodes:/opt/ros/jazzy /usr/bin/cmake --build /quadrotor/ros2_ws/build/quadrotor_msgs -- -j8 -l8
+[0.107s] [  3%] Built target quadrotor_msgs__rosidl_generator_type_description
+[0.108s] [  3%] Built target quadrotor_msgs__rs
+[0.115s] [  3%] Built target ament_cmake_python_symlink_quadrotor_msgs
+[0.129s] [  5%] Built target quadrotor_msgs__cpp
+[0.138s] [ 25%] Built target quadrotor_msgs__rosidl_generator_c
+[0.222s] [ 61%] Built target quadrotor_msgs__rosidl_typesupport_fastrtps_c
+[0.224s] [ 74%] Built target quadrotor_msgs__rosidl_typesupport_introspection_c
+[0.225s] [ 76%] Built target quadrotor_msgs__rosidl_typesupport_cpp
+[0.225s] [ 76%] Built target quadrotor_msgs__rosidl_typesupport_introspection_cpp
+[0.227s] [ 78%] Built target quadrotor_msgs__rosidl_typesupport_fastrtps_cpp
+[0.227s] [ 80%] Built target quadrotor_msgs__rosidl_typesupport_c
+[0.246s] [ 80%] Built target quadrotor_msgs
+[0.257s] running egg_info
+[0.265s] [ 81%] Built target quadrotor_msgs__py
+[0.266s] writing quadrotor_msgs.egg-info/PKG-INFO
+[0.267s] writing dependency_links to quadrotor_msgs.egg-info/dependency_links.txt
+[0.267s] writing top-level names to quadrotor_msgs.egg-info/top_level.txt
+[0.292s] reading manifest file 'quadrotor_msgs.egg-info/SOURCES.txt'
+[0.295s] writing manifest file 'quadrotor_msgs.egg-info/SOURCES.txt'
+[0.297s] [ 89%] Built target quadrotor_msgs__rosidl_generator_py
+[0.325s] [ 89%] Built target ament_cmake_python_build_quadrotor_msgs_egg
+[0.346s] [100%] Built target quadrotor_msgs_s__rosidl_typesupport_c
+[0.347s] [100%] Built target quadrotor_msgs_s__rosidl_typesupport_fastrtps_c
+[0.350s] [100%] Built target quadrotor_msgs_s__rosidl_typesupport_introspection_c
+[0.367s] Invoked command in '/quadrotor/ros2_ws/build/quadrotor_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/quadrotor/ros2_ws/install/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_nodes:/opt/ros/jazzy /usr/bin/cmake --build /quadrotor/ros2_ws/build/quadrotor_msgs -- -j8 -l8
+[0.379s] Invoking command in '/quadrotor/ros2_ws/build/quadrotor_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/quadrotor/ros2_ws/install/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_nodes:/opt/ros/jazzy /usr/bin/cmake --install /quadrotor/ros2_ws/build/quadrotor_msgs
+[0.387s] -- Install configuration: ""
+[0.388s] -- Execute custom install script
+[0.389s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/ament_index/resource_index/rosidl_interfaces/quadrotor_msgs
+[0.390s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/DroneState.json
+[0.390s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/DroneControl.json
+[0.391s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/TrajectoryPoint.json
+[0.393s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__functions.h
+[0.393s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__struct.h
+[0.394s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__type_support.h
+[0.394s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__functions.h
+[0.395s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__struct.h
+[0.395s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__type_support.h
+[0.396s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__functions.h
+[0.396s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__struct.h
+[0.397s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__type_support.h
+[0.397s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/drone_control.h
+[0.398s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/drone_state.h
+[0.398s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.399s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/trajectory_point.h
+[0.399s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/environment/library_path.sh
+[0.401s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/environment/library_path.dsv
+[0.403s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__rosidl_typesupport_fastrtps_c.h
+[0.403s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__rosidl_typesupport_fastrtps_c.h
+[0.404s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_c.h
+[0.404s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.406s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__builder.hpp
+[0.406s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__struct.hpp
+[0.407s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__traits.hpp
+[0.407s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__type_support.hpp
+[0.408s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__builder.hpp
+[0.408s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__struct.hpp
+[0.409s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__traits.hpp
+[0.409s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__type_support.hpp
+[0.409s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__builder.hpp
+[0.410s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__struct.hpp
+[0.410s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__traits.hpp
+[0.411s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__type_support.hpp
+[0.412s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/drone_control.hpp
+[0.412s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/drone_state.hpp
+[0.413s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[0.413s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/trajectory_point.hpp
+[0.415s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__rosidl_typesupport_fastrtps_cpp.hpp
+[0.416s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__rosidl_typesupport_fastrtps_cpp.hpp
+[0.416s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__rosidl_typesupport_fastrtps_cpp.hpp
+[0.417s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.418s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__rosidl_typesupport_introspection_c.h
+[0.418s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__rosidl_typesupport_introspection_c.h
+[0.419s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_c.h
+[0.419s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.421s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_control__rosidl_typesupport_introspection_cpp.hpp
+[0.421s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/drone_state__rosidl_typesupport_introspection_cpp.hpp
+[0.422s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/include/quadrotor_msgs/quadrotor_msgs/msg/detail/trajectory_point__rosidl_typesupport_introspection_cpp.hpp
+[0.422s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/environment/pythonpath.sh
+[0.423s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/environment/pythonpath.dsv
+[0.424s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs-0.0.1-py3.12.egg-info/PKG-INFO
+[0.424s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs-0.0.1-py3.12.egg-info/SOURCES.txt
+[0.425s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs-0.0.1-py3.12.egg-info/dependency_links.txt
+[0.425s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs-0.0.1-py3.12.egg-info/top_level.txt
+[0.427s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/__init__.py
+[0.427s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_c.c
+[0.428s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[0.428s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/_quadrotor_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[0.429s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/__init__.py
+[0.429s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/_drone_control.py
+[0.430s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/_drone_control_s.c
+[0.430s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/_drone_state.py
+[0.431s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/_drone_state_s.c
+[0.431s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/_trajectory_point.py
+[0.432s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg/_trajectory_point_s.c
+[0.432s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_c.so
+[0.433s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_fastrtps_c.so
+[0.433s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_introspection_c.so
+[0.434s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_fastrtps_c.so
+[0.435s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_introspection_c.so
+[0.436s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/quadrotor_msgs_s__rosidl_typesupport_c.so
+[0.436s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/ament_index/resource_index/rust_packages/quadrotor_msgs
+[0.438s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/rust/Cargo.toml
+[0.438s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/rust/build.rs
+[0.439s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/rust/src/lib.rs
+[0.439s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/rust/src/msg.rs
+[0.439s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/rust/src/msg/rmw.rs
+[0.440s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/DroneState.idl
+[0.440s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/DroneControl.idl
+[0.441s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/TrajectoryPoint.idl
+[0.441s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/DroneState.msg
+[0.442s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/DroneControl.msg
+[0.442s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/msg/TrajectoryPoint.msg
+[0.443s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/ament_index/resource_index/package_run_dependencies/quadrotor_msgs
+[0.444s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/ament_index/resource_index/parent_prefix_path/quadrotor_msgs
+[0.444s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/environment/ament_prefix_path.sh
+[0.445s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/environment/ament_prefix_path.dsv
+[0.445s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/environment/path.sh
+[0.446s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/environment/path.dsv
+[0.446s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/local_setup.bash
+[0.447s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/local_setup.sh
+[0.447s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/local_setup.zsh
+[0.448s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/local_setup.dsv
+[0.448s] -- Symlinking: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/package.dsv
+[0.455s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/ament_index/resource_index/packages/quadrotor_msgs
+[0.456s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/rosidl_cmake-extras.cmake
+[0.457s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.457s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.458s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.458s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.459s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.459s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.460s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgsConfig.cmake
+[0.460s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgsConfig-version.cmake
+[0.461s] -- Up-to-date symlink: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/package.xml
+[0.462s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_generator_c.so
+[0.463s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_fastrtps_c.so
+[0.464s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.466s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_introspection_c.so
+[0.467s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_c.so
+[0.469s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_introspection_cpp.so
+[0.470s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_typesupport_cpp.so
+[0.497s] Listing '/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs'...
+[0.497s] Listing '/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages/quadrotor_msgs/msg'...
+[0.501s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/lib/libquadrotor_msgs__rosidl_generator_py.so
+[0.502s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_cExport.cmake
+[0.503s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.504s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[0.504s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[0.505s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_cppExport.cmake
+[0.506s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[0.506s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[0.509s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.510s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.510s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_cExport.cmake
+[0.511s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.511s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.512s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.513s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_cppExport.cmake
+[0.513s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/quadrotor_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.514s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_pyExport.cmake
+[0.514s] -- Up-to-date: /quadrotor/ros2_ws/install/quadrotor_msgs/share/quadrotor_msgs/cmake/export_quadrotor_msgs__rosidl_generator_pyExport-noconfig.cmake
+[0.517s] Invoked command in '/quadrotor/ros2_ws/build/quadrotor_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/quadrotor/ros2_ws/install/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_nodes:/opt/ros/jazzy /usr/bin/cmake --install /quadrotor/ros2_ws/build/quadrotor_msgs

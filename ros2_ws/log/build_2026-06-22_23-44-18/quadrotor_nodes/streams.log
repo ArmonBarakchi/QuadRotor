@@ -1,0 +1,19 @@
+[0.384s] Invoking command in '/quadrotor/ros2_ws/build/quadrotor_nodes': PYTHONPATH=/quadrotor/ros2_ws/build/quadrotor_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/quadrotor/ros2_ws/install/quadrotor_nodes/lib/python3.12/site-packages:/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_nodes/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /quadrotor/ros2_ws/build/quadrotor_nodes/build --no-deps symlink_data
+[0.527s] running develop
+[0.640s] running egg_info
+[0.648s] writing quadrotor_nodes.egg-info/PKG-INFO
+[0.649s] writing dependency_links to quadrotor_nodes.egg-info/dependency_links.txt
+[0.650s] writing entry points to quadrotor_nodes.egg-info/entry_points.txt
+[0.650s] writing requirements to quadrotor_nodes.egg-info/requires.txt
+[0.651s] writing top-level names to quadrotor_nodes.egg-info/top_level.txt
+[0.668s] reading manifest file 'quadrotor_nodes.egg-info/SOURCES.txt'
+[0.670s] writing manifest file 'quadrotor_nodes.egg-info/SOURCES.txt'
+[0.680s] running build_ext
+[0.681s] Creating /quadrotor/ros2_ws/install/quadrotor_nodes/lib/python3.12/site-packages/quadrotor-nodes.egg-link (link to .)
+[0.683s] Installing controller_node script to /quadrotor/ros2_ws/install/quadrotor_nodes/lib/quadrotor_nodes
+[0.684s] Installing estimator_node script to /quadrotor/ros2_ws/install/quadrotor_nodes/lib/quadrotor_nodes
+[0.685s] Installing trajectory_node script to /quadrotor/ros2_ws/install/quadrotor_nodes/lib/quadrotor_nodes
+[0.685s] 
+[0.686s] Installed /quadrotor/ros2_ws/build/quadrotor_nodes
+[0.686s] running symlink_data
+[0.726s] Invoked command in '/quadrotor/ros2_ws/build/quadrotor_nodes' returned '0': PYTHONPATH=/quadrotor/ros2_ws/build/quadrotor_nodes/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/quadrotor/ros2_ws/install/quadrotor_nodes/lib/python3.12/site-packages:/quadrotor/ros2_ws/install/quadrotor_msgs/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_bringup:/quadrotor/ros2_ws/install/quadrotor_bringup/lib/python3.12/site-packages:/quadrotor/ros2_ws/build/quadrotor_nodes:/quadrotor/ros2_ws/install/quadrotor_nodes/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /quadrotor/ros2_ws/build/quadrotor_nodes/build --no-deps symlink_data

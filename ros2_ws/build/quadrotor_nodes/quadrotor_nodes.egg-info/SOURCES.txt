@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+quadrotor_nodes/__init__.py
+quadrotor_nodes/controller_node.py
+quadrotor_nodes/estimator_node.py
+quadrotor_nodes/trajectory_node.py
+quadrotor_nodes.egg-info/PKG-INFO
+quadrotor_nodes.egg-info/SOURCES.txt
+quadrotor_nodes.egg-info/dependency_links.txt
+quadrotor_nodes.egg-info/entry_points.txt
+quadrotor_nodes.egg-info/requires.txt
+quadrotor_nodes.egg-info/top_level.txt
+quadrotor_nodes.egg-info/zip-safe
+resource/quadrotor_nodes
