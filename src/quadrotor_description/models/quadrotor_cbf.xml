@@ -24,19 +24,7 @@
     <geom name="ground" type="plane" size="10 10 0.1"
           rgba="0.5 0.5 0.5 1" condim="3" group="0"/>
 
-    <!--
-      group=1: obstacle spheres — detected by LiDAR raycasting.
-
-      Layout verified:
-        - All obstacles safe from start [0.6, 0, 1.0] (d > 0.30m)
-        - RTAA* finds paths to all 3 goals with plan_radius=0.27m
-        - Goals in open space away from obstacles
-
-      Obstacles cluster around center forcing drone to navigate around them.
-      Visual radius: 0.15m
-      CBF safety radius: 0.30m
-      RTAA* plan radius: 0.27m
-    -->
+    <!-- group=1: obstacle spheres — detected by LiDAR raycasting. -->
     <geom name="obs1" type="sphere" size="0.15"
           pos=" 0.0  0.0  1.4"
           material="obstacle_mat" condim="3" group="1"/>
@@ -57,7 +45,7 @@
           pos=" 0.0 -0.5  1.6"
           material="obstacle_mat" condim="3" group="1"/>
 
-    <!-- Quadrotor — group=0, also excluded via bodyexclude in mj_ray() -->
+    <!-- Quadrotor — group=0 -->
     <body name="quadrotor" pos="0 0 0.1">
 
       <freejoint name="root"/>

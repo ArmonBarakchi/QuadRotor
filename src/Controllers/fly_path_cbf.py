@@ -1,6 +1,5 @@
 """
-fly_path_cbf.py
----------------
+
 Full-stack quadrotor: UKF state estimation + LiDAR obstacle detection
 + RTAA* motion planning + CBF safety filter.
 
@@ -8,14 +7,6 @@ Pipeline every timestep:
     MuJoCo physics  →  IMU/GPS simulation  →  UKF predict/update
     LiDAR scan      →  obstacle detection  →  RTAA* replan
     RTAA* waypoint  →  geometric ctrl      →  CBF filter  →  MuJoCo
-
-Nothing is hardcoded:
-    - Physical parameters read from XML at runtime
-    - State from UKF (not ground truth)
-    - Obstacles from LiDAR (not hardcoded list)
-    - Path from RTAA* (replanned online)
-    - Safety from CBF (regardless of planner/estimator quality)
-    - Maps defined in map_configs.py
 
 Usage:
     mjpython fly_path_cbf.py                     # default map, full pipeline
@@ -31,7 +22,6 @@ Usage:
 """
 
 import argparse
-import os
 import time
 import numpy as np
 import mujoco
@@ -45,17 +35,17 @@ from ukf import UKF
 from MAP_CONFIGS import get_map, list_maps
 
 
-# ── Algorithm parameters (not physical — those come from XML) ───────────────────
-INERTIA = np.diag([1.4e-5, 1.4e-5, 2.2e-5])  # not exposed in MuJoCo Python API
+# ── Algorithm parameters  ───────────────────
+INERTIA = np.diag([1.4e-5, 1.4e-5, 2.2e-5])
 
 PRINT_EVERY    = 250
-REPLAN_EVERY   = 50    # steps between RTAA* replans  (~10 Hz at 500 Hz sim)
-LIDAR_EVERY    = 50    # steps between LiDAR scans    (~10 Hz)
-GPS_EVERY      = 50    # steps between GPS updates    (~10 Hz)
-GOAL_THRESHOLD = 0.25  # m — distance to count goal as reached
-SIM_DURATION   = 60.0  # s — hard time limit
+REPLAN_EVERY   = 100    # steps between RTAA* replans
+LIDAR_EVERY    = 50    # steps between LiDAR scans
+GPS_EVERY      = 50    # steps between GPS updates
+GOAL_THRESHOLD = 0.15  # m — distance to count goal as reached
+SIM_DURATION   = 60.0
 
-# Sensor noise
+# Sensor noises
 GPS_NOISE   = 0.3
 GYRO_NOISE  = 1e-3
 ACCEL_NOISE = 2e-2
@@ -63,16 +53,15 @@ GYRO_BIAS   = np.array([ 0.005, -0.003,  0.002])
 ACCEL_BIAS  = np.array([ 0.01,   0.02,  -0.01 ])
 
 # Safety radii
-CBF_SAFETY_RADIUS = 0.40
-PLAN_RADIUS       = 0.27
+CBF_SAFETY_RADIUS = 0.35
+PLAN_RADIUS       = 0.30
 
 DRONE_GEOMS          = {'hub','arm1','arm2','arm3','arm4',
                         'rotor1','rotor2','rotor3','rotor4'}
 OBSTACLE_GEOM_PREFIX = 'obs'
 
 
-# ── Helpers ─────────────────────────────────────────────────────────────────────
-
+# ── Helpers ──────────────
 def get_ground_truth(data):
     pos   = data.qpos[0:3].copy()
     quat  = data.qpos[3:7].copy()
@@ -120,17 +109,33 @@ def check_mujoco_contacts(model, data):
             hits.append((obs, float(c.dist)))
     return hits
 
+# Visualize goals as green spheres in the viewer
+def add_goal_markers(viewer, goals, current_goal_idx):
+    for i, goal in enumerate(goals):
+        if i < current_goal_idx:
+            rgba = [0.5, 0.5, 0.5, 0.4]   # grey — already reached
+        elif i == current_goal_idx:
+            rgba = [0.0, 1.0, 0.0, 0.9]   # bright green — current
+        else:
+            rgba = [0.0, 0.0, 1.0, 0.4]   # blue — future
+        viewer.user_scn.ngeom += 1
+        g = viewer.user_scn.geoms[viewer.user_scn.ngeom - 1]
+        mujoco.mjv_initGeom(g, mujoco.mjtGeom.mjGEOM_SPHERE,
+                            np.array([0.06, 0, 0]),   # size
+                            goal,                      # position
+                            np.eye(3).flatten(),       # rotation
+                            np.array(rgba, dtype=np.float32))
 
 # ── Main ────────────────────────────────────────────────────────────────────────
 
 def main(map_name='default', use_cbf=True, use_rtaa=True, use_ukf=True,
-         alpha=1.0, lookahead=30):
+         alpha=1.5, lookahead=15):
 
     cfg   = get_map(map_name)
     GOALS = cfg['goals']
     START = np.array([0.6, 0.0, 1.0])
 
-    # ── Load MuJoCo model — read physical parameters from XML ───────────────
+    # ── Load MuJoCo model ───────────────
     model = mujoco.MjModel.from_xml_path(cfg['xml'])
     data  = mujoco.MjData(model)
 
@@ -146,29 +151,34 @@ def main(map_name='default', use_cbf=True, use_rtaa=True, use_ukf=True,
     data.qpos[4:7] = 0.0
     mujoco.mj_forward(model, data)
 
-    # ── Subsystems ───────────────────────────────────────────────────────────
+    # ── Subsystems ───────
+
+    #controller
     controller = GeometricController(mass=MASS, inertia=INERTIA, gravity=GRAVITY)
     controller.kp = 2.0
     controller.kv = 1.2
 
+    #state estimation
     ukf = UKF(mass=MASS, gravity=GRAVITY)
     ukf.initialize(pos=START, vel=np.zeros(3),
                    quat=np.array([1., 0., 0., 0.]))
 
+    #obstacle detection
     lidar = LiDAR(n_horizontal=72, n_vertical=9, fov_vertical=90.0,
                   max_range=2.0, safety_margin=0.20,
                   cluster_eps=0.35, min_hits=3)
 
-    # cbf = CBF(mass=MASS, f_max=F_MAX, alpha=alpha,
-    #           safety_radius=CBF_SAFETY_RADIUS)
+    #safety filter
     cbf = CBF(mass=MASS, f_max=F_MAX, alpha=alpha,
               safety_radius=CBF_SAFETY_RADIUS,
-              lookahead_dist=0.25)
-    planner = RTAAStar(grid_res=0.20, lookahead=lookahead,
+              lookahead_dist=0.3)
+
+    #motion planner
+    planner = RTAAStar(grid_res=0.25, lookahead=lookahead,
                        bounds=((-1.5, 1.5), (-1.5, 1.5), (0.3, 2.3)),
                        plan_radius=PLAN_RADIUS)
 
-    # ── Mode string ──────────────────────────────────────────────────────────
+    # ── Mode string for diagnostics──────────────────────────────────────────────────────────
     parts = []
     if use_ukf:  parts.append("UKF")
     if use_rtaa: parts.append(f"RTAA*(k={lookahead})")
@@ -189,7 +199,7 @@ def main(map_name='default', use_cbf=True, use_rtaa=True, use_ukf=True,
           f"{'g':>2}  {'obs':>3}  status")
     print("-" * 85)
 
-    # ── Tracking variables ───────────────────────────────────────────────────
+    # ── Tracking variables ───────
     step                    = 0
     start_wall              = time.time()
     goal_idx                = 0
@@ -214,6 +224,10 @@ def main(map_name='default', use_cbf=True, use_rtaa=True, use_ukf=True,
 
         while viewer.is_running():
             sim_time = data.time
+            viewer.user_scn.ngeom = 0  # reset custom geoms each frame
+            add_goal_markers(viewer, GOALS, goal_idx)
+            if step % 2 == 0:
+                viewer.sync()
             if SIM_DURATION and sim_time >= SIM_DURATION:
                 print(f"\nTime limit t={sim_time:.1f}s")
                 break
@@ -221,7 +235,7 @@ def main(map_name='default', use_cbf=True, use_rtaa=True, use_ukf=True,
                 print(f"\nAll goals reached at t={sim_time:.1f}s")
                 break
 
-            # ── Ground truth (sensor simulation only) ───────────────────────
+            # ── Ground truth used for comparison ───────────────────────
             pos_true, vel_true, R_true, omega_true, quat_true = \
                 get_ground_truth(data)
 
@@ -258,7 +272,7 @@ def main(map_name='default', use_cbf=True, use_rtaa=True, use_ukf=True,
             dist_to_goal = np.linalg.norm(pos_est - GOALS[goal_idx])
             if dist_to_goal < GOAL_THRESHOLD and sim_time > 2.0:
                 goal_arrival_times.append((goal_idx + 1, sim_time))
-                print(f"\n  ✓ Goal {goal_idx+1} reached at t={sim_time:.2f}s  "
+                print(f"\n Goal {goal_idx+1} reached at t={sim_time:.2f}s  "
                       f"ukf_err={ukf_errors[-1]:.3f}m  "
                       f"obs_known={len(known_obstacles)}")
                 goal_idx += 1
@@ -275,14 +289,15 @@ def main(map_name='default', use_cbf=True, use_rtaa=True, use_ukf=True,
                                         CBF_SAFETY_RADIUS, margin=0.10)
             else:
                 target_safe = current_goal
+
             # ── RTAA* replan at 10 Hz ────────────────────────────────────────
             if use_rtaa and step % REPLAN_EVERY == 0:
                 if known_obstacles:
-                    current_wp = planner.next_waypoint(pos_est, current_goal)
+                    current_wp = planner.next_waypoint(pos_est, target_safe)
                 else:
-                    current_wp = current_goal
+                    current_wp = target_safe
 
-            target = current_wp if use_rtaa else current_goal
+            target = current_wp if use_rtaa else target_safe
 
             # ── Nominal force ────────────────────────────────────────────────
             ep    = pos_est - target
@@ -312,7 +327,7 @@ def main(map_name='default', use_cbf=True, use_rtaa=True, use_ukf=True,
             else:
                 F_apply = F_nom
 
-            # ── Apply wrench ─────────────────────────────────────────────────
+            # ── Apply control to drone ─────────────────────────────────────────────────
             tau_world = R_true @ M
             data.xfrc_applied[body_id, 0] = float(F_apply[0])
             data.xfrc_applied[body_id, 1] = float(F_apply[1])
@@ -389,9 +404,9 @@ def main(map_name='default', use_cbf=True, use_rtaa=True, use_ukf=True,
         print(f"  First collision  : t={first_collision_t:.3f}s")
     safe       = mujoco_collisions_total == 0
     goals_done = len(goal_arrival_times) == len(GOALS)
-    print(f"  Safety           : {'✓ SAFE' if safe else '✗ UNSAFE'}")
+    print(f"  Safety           : {'SAFE' if safe else 'UNSAFE'}")
     print(f"  Navigation       : "
-          f"{'✓ ALL GOALS REACHED' if goals_done else f'✗ {len(goal_arrival_times)}/{len(GOALS)}'}")
+          f"{'ALL GOALS REACHED' if goals_done else f'{len(goal_arrival_times)}/{len(GOALS)}'}")
     print(f"{'═'*70}")
 
 

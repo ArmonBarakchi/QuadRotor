@@ -45,17 +45,39 @@ class RTAAStar:
         self._obs_grid = []   # list of (gx, gy, gz, r_cells_sq)
         self._set_called = False
 
+    # def set_obstacles(self, centers: list):
+    #     """Set obstacles from world-space centers. Precomputes grid coords."""
+    #     r_cells = self.plan_radius / self.res
+    #     r_sq    = r_cells ** 2
+    #     self._obs_grid = []
+    #     for c in centers:
+    #         gx = int(round((c[0] - self.bounds[0][0]) / self.res))
+    #         gy = int(round((c[1] - self.bounds[1][0]) / self.res))
+    #         gz = int(round((c[2] - self.bounds[2][0]) / self.res))
+    #         self._obs_grid.append((gx, gy, gz, r_sq))
+    #     self._set_called = True
     def set_obstacles(self, centers: list):
-        """Set obstacles from world-space centers. Precomputes grid coords."""
         r_cells = self.plan_radius / self.res
-        r_sq    = r_cells ** 2
+        r_sq = r_cells ** 2
         self._obs_grid = []
         for c in centers:
             gx = int(round((c[0] - self.bounds[0][0]) / self.res))
             gy = int(round((c[1] - self.bounds[1][0]) / self.res))
             gz = int(round((c[2] - self.bounds[2][0]) / self.res))
             self._obs_grid.append((gx, gy, gz, r_sq))
-        self._set_called = True
+
+        # Precompute blocked set — O(grid_size) once vs O(obstacles) per neighbor
+        self._blocked = set()
+        for x in range(self.nx):
+            for y in range(self.ny):
+                for z in range(self.nz):
+                    for gx, gy, gz, r_sq in self._obs_grid:
+                        dx = x - gx;
+                        dy = y - gy;
+                        dz = z - gz
+                        if dx * dx + dy * dy + dz * dz <= r_sq:
+                            self._blocked.add((x, y, z))
+                            break
 
     def reset_learning(self):
         self.h_table.clear()
@@ -69,14 +91,18 @@ class RTAAStar:
         return np.array([self.bounds[i][0] + node[i] * self.res
                          for i in range(3)])
 
+    # def _valid(self, x, y, z):
+    #     if not (0 <= x < self.nx and 0 <= y < self.ny and 0 <= z < self.nz):
+    #         return False
+    #     for gx, gy, gz, r_sq in self._obs_grid:
+    #         dx = x - gx; dy = y - gy; dz = z - gz
+    #         if dx*dx + dy*dy + dz*dz <= r_sq:
+    #             return False
+    #     return True
     def _valid(self, x, y, z):
         if not (0 <= x < self.nx and 0 <= y < self.ny and 0 <= z < self.nz):
             return False
-        for gx, gy, gz, r_sq in self._obs_grid:
-            dx = x - gx; dy = y - gy; dz = z - gz
-            if dx*dx + dy*dy + dz*dz <= r_sq:
-                return False
-        return True
+        return (x, y, z) not in self._blocked
 
     def _h(self, node, goal):
         """Euclidean heuristic, overridden by learned values."""

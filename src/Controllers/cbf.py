@@ -1,7 +1,5 @@
 """
-cbf.py
-------
-Control Barrier Function (CBF) safety filter for quadrotor obstacle avoidance.
+Control Barrier Function (CBF) safety filter
 
 The CBF constraint is only enforced when the drone is at risk:
   - Inside or near the safety radius (h < h_threshold)
@@ -87,12 +85,10 @@ class CBF:
             h_vals.append(h)
 
             # Only enforce if close enough to matter
-            # dist_sq < h_thresh means dist < r + lookahead_dist
             if dist_sq > h_thresh:
                 continue
 
             # Enforce regardless of approach direction when inside safety radius
-            # Enforce only when approaching when outside safety radius
             if h >= 0 and h_dot_vel >= 0:
                 continue  # outside safety radius and moving away — no action needed
 
