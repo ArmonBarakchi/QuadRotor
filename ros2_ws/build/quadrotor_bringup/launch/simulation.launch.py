@@ -1,1 +1,0 @@
-/quadrotor/ros2_ws/src/quadrotor_bringup/launch/simulation.launch.py

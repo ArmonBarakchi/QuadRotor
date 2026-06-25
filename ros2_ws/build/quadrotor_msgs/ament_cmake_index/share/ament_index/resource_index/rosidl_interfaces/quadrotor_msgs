@@ -1,6 +1,0 @@
-msg/DroneControl.idl
-msg/DroneControl.msg
-msg/DroneState.idl
-msg/DroneState.msg
-msg/TrajectoryPoint.idl
-msg/TrajectoryPoint.msg

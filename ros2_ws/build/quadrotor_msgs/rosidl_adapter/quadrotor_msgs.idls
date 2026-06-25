@@ -1,3 +1,0 @@
-/quadrotor/ros2_ws/build/quadrotor_msgs/rosidl_adapter/quadrotor_msgs:msg/DroneState.idl
-/quadrotor/ros2_ws/build/quadrotor_msgs/rosidl_adapter/quadrotor_msgs:msg/DroneControl.idl
-/quadrotor/ros2_ws/build/quadrotor_msgs/rosidl_adapter/quadrotor_msgs:msg/TrajectoryPoint.idl
