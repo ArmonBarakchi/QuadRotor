@@ -31,7 +31,7 @@ Four subsystems run in a layered pipeline at different rates:
 | **RTAA** | Real-time motion planning | Finds path using only local LiDAR map, no global map needed |
 | **CBF** | Safety filter | Forward invariance of safe set at every timestep |
 
-Nothing is hardcoded: physical parameters are read from the MuJoCo XML at runtime, obstacle positions come entirely from LiDAR, and paths are replanned online as the drone moves.
+Physical parameters are read from the MuJoCo XML at runtime, obstacle positions come entirely from LiDAR, and paths are replanned online as the drone moves.
 
 ---
 
